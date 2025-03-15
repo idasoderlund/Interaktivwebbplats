@@ -9,10 +9,9 @@
   <body>
     <header>
       <nav class="navigationBar">
-        <a class="homeOpen" href="">Home</a>
-        <a href="">About Us</a>
-        <a href="/menu.html">Menu</a>
-        <a href="">Contact Us</a>
+        <a href="/home.html">Home</a>
+        <a href="/menu.html">Our Menu</a>
+        <a class="contactOpen" href="/contact.html">Contact Us</a>
       </nav>
     </header>
     <main>
@@ -54,11 +53,24 @@
           </div>
 
           <div class="input-group">
-            <label for="password"></label>
+            <label for="phone"></label>
             <input
               type="tel"
               id="phone"
               placeholder="phone number"
+              class="form-control"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label for="message"></label>
+            <input
+              type="textarea"
+              id="message"
+              rows="6"
+              cols="50"
+              placeholder="Message"
               class="form-control"
               required
             />
