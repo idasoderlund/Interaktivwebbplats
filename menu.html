@@ -97,7 +97,13 @@
           </ul>
         </div>
 
-        <div class="pricesAndAllergies">
+
+
+        <div class="category pricesAndAllergies">
+          <section id="interactiveToggleElement">
+            <button id="togglePriceAndAllergies">Prices And Allergies:</button>
+            <div id="priceAndAllergiesInfo" style="display: none">
+              <div class="pricesAndAllergies">
           <h2>Allergies & Prices, Special Diet & prices: Appetizer</h2>
           <table>
             <tr>
@@ -228,61 +234,138 @@
             </tr>
           </table>
         </div>
+        </section>
 
-        <div class="category">
-          <h2>Lunch Buffet:</h2>
-          <p>
-            Join us for our delightful lunch buffet, available from Monday to
-            Friday! Our buffet is served from 11:30 AM to 2:00 PM, offering a
-            wide variety of delicious dishes that cater to every palate.
-          </p>
-
-          <h2>Daily Specials:</h2>
-          <p>
-            Each day, we feature a special dish that highlights seasonal
-            ingredients and culinary creativity. Be sure to ask our staff about
-            today’s special when you arrive!
-          </p>
-
-          <div class="category">
-            <h2>Pricing:</h2>
-            <ul>
-              <li>Standard Price: $15.99 per person</li>
-              <li>Children (Ages 6-12): $9.99</li>
-              <li>Kids Under 6: Free</li>
-            </ul>
-          </div>
-
-          <div class="category">
-            <h2>Add-Ons:</h2>
-            <p>
-              Enhance your buffet experience with our selection of optional
-              extras:
-            </p>
-            <ul>
-              <li>Dessert: $3.00 (Choose from a variety of sweet treats)</li>
-              <li>Soup of the Day: $2.00</li>
-              <li>Salad Bar: Included</li>
-              <li>Premium Meat Option: $4.00 (Ask for today’s selection)</li>
-            </ul>
-          </div>
-
-          <div class="category">
-            <h2>Beverage Options:</h2>
-            <p>We offer a range of drinks to complement your meal:</p>
-            <ul>
-              <li>Soft Drinks: $1.50</li>
-              <li>Iced Tea or Lemonade: $2.00</li>
-              <li>Coffee or Tea: $2.00</li>
-              <li>Juice: $2.50</li>
-            </ul>
-
-            <p>
-              Come and indulge in our lunch buffet, where fresh, flavorful meals
-              await you every weekday. We look forward to serving you!
-            </p>
-          </div>
         </div>
+          
+            
+
+
+
+        
+
+        <div class="category lunchBuffet">
+          <section id="interactiveToggleElement">
+            <button id="togglelunchBuffet">Lunch Buffet:</button>
+            <div id="lunchBuffetInfo" style="display: none">
+              <h2>Lunch Buffet:</h2>
+              <p>
+                Join us for our delightful lunch buffet, available from Monday
+                to Friday! Our buffet is served from 11:30 AM to 2:00 PM,
+                offering a wide variety of delicious dishes that cater to every
+                palate.
+              </p>
+
+              <h2>Daily Specials:</h2>
+              <p>
+                Each day, we feature a special dish that highlights seasonal
+                ingredients and culinary creativity. Be sure to ask our staff
+                about today’s special when you arrive!
+              </p>
+              <div class="category pricing">
+                <h2>Pricing:</h2>
+                <ul>
+                  <li>Standard Price: $15.99 per person</li>
+                  <li>Children (Ages 6-12): $9.99</li>
+                  <li>Kids Under 6: Free</li>
+                </ul>
+              </div>
+
+              <div class="category addOns">
+                <h2>Add-Ons:</h2>
+                <p>
+                  Enhance your buffet experience with our selection of optional
+                  extras:
+                </p>
+                <ul>
+                  <li>
+                    Dessert: $3.00 (Choose from a variety of sweet treats)
+                  </li>
+                  <li>Soup of the Day: $2.00</li>
+                  <li>Salad Bar: Included</li>
+                  <li>
+                    Premium Meat Option: $4.00 (Ask for today’s selection)
+                  </li>
+                </ul>
+              </div>
+
+              <div class="category beverageOptions">
+                <h2>Beverage Options:</h2>
+                <p>We offer a range of drinks to complement your meal:</p>
+                <ul>
+                  <li>Soft Drinks: $1.50</li>
+                  <li>Iced Tea or Lemonade: $2.00</li>
+                  <li>Coffee or Tea: $2.00</li>
+                  <li>Juice: $2.50</li>
+                </ul>
+
+                <p>
+                  Come and indulge in our lunch buffet, where fresh, flavorful
+                  meals await you every weekday. We look forward to serving you!
+                </p>
+              </div>
+            </div>
+            <!--lunch buffet ifo - SPIK-->
+          </section>
+        </div>
+        <!--lunch buffe - SPIK-->
+      </div>
+      <!--Menu- SPIK-->
+      <div class="orderSection">
+        <h2>Orders</h2>
+        <h3>Choose Dishes:</h3>
+        <form id="orderForm">
+          <label>
+            <input type="checkbox" name="dish" value="23.99" /> Mediterranean
+            Mezze Platter - $23.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="19.99" /> Japanese Gyoza -
+            $19.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="15.99" /> Mexican Elote -
+            $15.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="20.99" /> Samosas - $20.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="29.99" /> Risotto alla
+            Milanese - $29.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="29.99" /> Injera With Doro
+            Wat - $27.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="24.99" /> Butter Chicken -
+            $24.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="18.99" /> Lasagna - $18.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="13.99" /> Cannoli - $13.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="13.99" /> Gulab Jamun -
+            $11.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="13.99" /> Kue Cubir -
+            $15.99 </label
+          ><br />
+          <label>
+            <input type="checkbox" name="dish" value="13.99" /> Sesame Balls -
+            $13.99 </label
+          ><br />
+
+          <button type="button" id="calculateTotal">
+            Calculate total Cost:
+          </button>
+        </form>
+        <h3 id="totalCostLabel">Total cost: $0.00</h3>
       </div>
     </main>
     <footer class="footerField">
