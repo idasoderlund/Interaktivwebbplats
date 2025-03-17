@@ -1,23 +1,82 @@
 body {
   box-sizing: border-box;
   display: flex;
-  background-color: #f5f5f5;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+.navigationSection {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #cae0bc;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+}
+
+.navigationBar {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #62825d;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+.menuOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #62825d;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+main {
+  flex: 1;
+  margin-top: 80px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
 .category h1 {
   box-sizing: border-box;
   color: #62825d;
-  justify-content: center;
   align-items: center;
   padding: 15px;
   font-family: "League Script", cursive;
   font-size: 50px;
-  font-weight: 500;
+  font-weight: 800;
 }
 
 .category h2 {
   color: #62825d;
   padding: 10px;
   font-family: "League Script", cursive;
-  font-size: 25px;
+  font-size: 45px;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+.footerField {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #cae0bc;
+}
+
+.infoFooter b {
+  display: inline;
+}
+
+.infoFooter p {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 1em;
+  padding-bottom: 1em;
 }

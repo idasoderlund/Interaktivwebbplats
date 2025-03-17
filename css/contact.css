@@ -3,3 +3,90 @@
   font-size: 50px;
   font-weight: 500;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navigationSection {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: #cae0bc;
+}
+.navigationBar {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  color: #62825d;
+  font-family: "Delius Swash Caps", cursive;
+}
+
+.contactOpen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #62825d;
+  border-radius: 20px;
+  padding: 10px;
+  color: #fff;
+  margin-right: 20px;
+}
+
+.bookingText {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 70px;
+  margin-right: 50px;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+.bookingText h1 {
+  box-sizing: border-box;
+  color: #62825d;
+  align-items: center;
+  font-family: "League Script", cursive;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.bookingText p {
+  margin-bottom: 30px;
+}
+
+.totalContentForm {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+.footerField {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #cae0bc;
+}
+
+.infoFooter b {
+  display: inline;
+}
+
+.infoFooter p {
+  display: inline;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: baseline;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
