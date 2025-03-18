@@ -24,7 +24,7 @@ function inittogglePriceAndAllergies() {
   const pricesAndAllergiesInfo = document.getElementById(
     "pricesAndAllergiesInfo"
   );
-  if (toggleButton1 && priceAndAllergiesInfo) {
+  if (toggleButton1 && pricesAndAllergiesInfo) {
     console.log(
       "Toggle button for prices and allergies not found, initializing."
     );

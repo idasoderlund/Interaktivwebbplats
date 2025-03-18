@@ -29,24 +29,25 @@
       </nav>
     </header>
     <main>
-      <div class="filteringFood">
-        <label for="chooseCategory">Choose category:</label>
+      
+      <div class="menu">
+        <h1>MENU</h1>
+        <div class="filteringFood">
+        <label for="chooseCategory"></label>
         <select id="chooseCategory">
-          <option value="all">Alla</option>
+          <option value="all">Choose Category:</option>
           <option value="appetizer">Appetizer</option>
           <option value="mainCourse">Main Course</option>
           <option value="dessert">Dessert</option>
         </select>
       </div>
-      <div class="menu">
-        <h1>MENU</h1>
         <div class="category appetizer">
           <h2>Appetizer:</h2>
           <p>
             A exquisite selection of our appetizers, perfect for starting your
             meal.
           </p>
-          <ul>
+          <ul class="listedOptions">
             <li>
               Mediterranean Mezze Platter - served with cherry tomatoes, a
               drizzle of olive oil & warm pita bread
@@ -69,7 +70,7 @@
           <p>
             Our main courses are prepared with the finest ingredients and love.
           </p>
-          <ul>
+          <ul class="listedOptions">
             <li>Risotto alla Milanese - served with a fresh salad</li>
             <li>Injera with Doro Wat - served with hard boiled eggs</li>
             <li>Butter Chicken - served with naan bread</li>
@@ -80,7 +81,7 @@
         <div class="category dessert">
           <h2>Dessert:</h2>
           <p>Finish your meal with one of our delicious desserts.</p>
-          <ul>
+          <ul class="listedOptions">
             <li>
               Cannoli - tube-shaped shells filled with a sweet ricotta cheese
               mixture, often studded with chocolate chips or candied fruit
@@ -96,13 +97,13 @@
             <li>Sesame Balls (Jian Dui) - served with red bean paste</li>
           </ul>
         </div>
-
+        
 
 
         <div class="category pricesAndAllergies">
           <section id="interactiveToggleElement">
             <button id="togglePriceAndAllergies">Prices And Allergies:</button>
-            <div id="priceAndAllergiesInfo" style="display: none">
+            <div id="pricesAndAllergiesInfo" style="display: none">
               <div class="pricesAndAllergies">
           <h2>Allergies & Prices, Special Diet & prices: Appetizer</h2>
           <table>
@@ -234,6 +235,7 @@
             </tr>
           </table>
         </div>
+        
         </section>
 
         </div>

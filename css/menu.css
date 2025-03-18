@@ -41,15 +41,18 @@ body {
 main {
   flex: 1;
   margin-top: 80px;
+  background-color: #d5e5d5;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
-.category h1 {
+.category h1,
+.menu h1 {
   box-sizing: border-box;
   color: #62825d;
   align-items: center;
+  text-align: center;
   padding: 15px;
   font-family: "League Script", cursive;
-  font-size: 50px;
+  font-size: 70px;
   font-weight: 800;
 }
 
@@ -58,6 +61,37 @@ main {
   padding: 10px;
   font-family: "League Script", cursive;
   font-size: 45px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.orderSection h2,
+h3 {
+  color: #62825d;
+  padding: 10px;
+  font-family: "League Script", cursive;
+  font-size: 45px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.category p {
+  padding-right: 60px;
+  padding-left: 60;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.listedOptions {
+  padding-right: 60px;
+  padding-left: 60;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
@@ -79,4 +113,16 @@ main {
   align-items: baseline;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+#chooseCategory,
+#togglePriceAndAllergies,
+#togglelunchBuffet,
+#calculateTotal {
+  background-color: #889e73;
+  color: #fff;
+  padding: 5px 30px;
+  border-radius: 20px;
+  margin-left: 50px;
+  margin-bottom: 20px;
 }
