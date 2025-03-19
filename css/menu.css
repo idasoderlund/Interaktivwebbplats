@@ -27,6 +27,19 @@ body {
   font-family: "Delius Swash Caps", cursive;
 }
 
+@media (max-width: 768px) {
+  .navigationBar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .navigationBar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .menuOpen {
   display: flex;
   justify-content: center;
@@ -44,6 +57,15 @@ main {
   background-color: #d5e5d5;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
+.category,
+.menu,
+.orderSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 .category h1,
 .menu h1 {
   box-sizing: border-box;
@@ -94,6 +116,12 @@ h3 {
   text-align: center;
 }
 
+.orderForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*-----------------------------------------------------------------------------------------------------------*/
 .footerField {
   width: 100%;
@@ -102,17 +130,34 @@ h3 {
   background-color: #cae0bc;
 }
 
-.infoFooter b {
+.openingHoursInfo,
+.contectInfo b {
   display: inline;
 }
 
-.infoFooter p {
+.openingHoursInfo,
+.contectInfo p {
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
   align-items: baseline;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+.openingHoursInfo {
+  grid-template-columns: 1 / 2;
+  grid-template-rows: 1;
+}
+
+.contectInfo {
+  grid-template-columns: 2 / 3;
+  grid-template-rows: 1;
+}
+
+@media (max-width: 480px) {
+  .footerField {
+    grid-template-columns: 1fr;
+  }
 }
 
 #chooseCategory,
@@ -123,6 +168,8 @@ h3 {
   color: #fff;
   padding: 5px 30px;
   border-radius: 20px;
-  margin-left: 50px;
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

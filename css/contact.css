@@ -32,6 +32,19 @@ main {
   font-family: "Delius Swash Caps", cursive;
 }
 
+@media (max-width: 768px) {
+  .navigationBar {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .navigationBar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+
 .contactOpen {
   display: flex;
   justify-content: center;
@@ -82,16 +95,32 @@ main {
   justify-content: space-around;
   background-color: #cae0bc;
 }
-
-.infoFooter b {
+.openingHoursInfo,
+.contectInfo b {
   display: inline;
 }
 
-.infoFooter p {
-  display: inline;
-  flex-direction: row;
+.openingHoursInfo,
+.contectInfo p {
+  box-sizing: border-box;
+  display: flex;
   justify-content: space-around;
   align-items: baseline;
   padding-top: 1em;
   padding-bottom: 1em;
+}
+.openingHoursInfo {
+  grid-template-columns: 1 / 2;
+  grid-template-rows: 1;
+}
+
+.contectInfo {
+  grid-template-columns: 2 / 3;
+  grid-template-rows: 1;
+}
+
+@media (max-width: 480px) {
+  .footerField {
+    grid-template-columns: 1fr;
+  }
 }

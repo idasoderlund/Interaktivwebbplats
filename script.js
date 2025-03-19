@@ -82,5 +82,5 @@ document
     });
     document.getElementById(
       "totalCostLabel"
-    ).innerText = `Totalkostnad: $${totalCost.toFixed(2)}`;
+    ).innerText = `Total Cost: $${totalCost.toFixed(2)}`;
   });
