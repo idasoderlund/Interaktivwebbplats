@@ -94,18 +94,27 @@ main {
   padding-top: 30px;
 }
 
+.imageFood,
+.imageFood2 {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+}
 .informationTexts {
+  box-sizing: border-box;
+  display: grid;
+  gap: 20px;
+}
+
+.textContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   gap: 20px;
 }
 
-.textContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto, auto, auto;
-  gap: 20px;
+.textContainer p {
+  margin: 40px 40px;
 }
 
 .aboutUs {
@@ -115,6 +124,31 @@ main {
 
 .concept {
   grid-template-columns: 2;
+  grid-template-rows: 1;
+}
+
+.imageFood img {
+  grid-template-columns: 1;
+  grid-template-rows: 2;
+  height: 250px;
+  width: 300px;
+  border-radius: 20px;
+}
+
+.imageFood img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+}
+
+.imageFood2 img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+}
+
+.philosophy {
+  grid-template-columns: 2;
   grid-template-rows: 2;
 }
 
@@ -123,9 +157,12 @@ main {
   grid-template-rows: 3;
 }
 
-.philosophy {
+.imageFood2 img {
   grid-template-columns: 2;
-  grid-template-rows: 1;
+  grid-template-rows: 3;
+  height: 250px;
+  width: 300px;
+  border-radius: 20px;
 }
 
 .informationTexts h2 {
@@ -136,6 +173,8 @@ main {
   text-align: center;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  text-decoration: underline;
 }
 
 @media (max-width: 768px) {
@@ -154,20 +193,6 @@ main {
   width: 100%;
   height: auto;
   display: block;
-}
-
-.imageFood img {
-  grid-template-columns: 1;
-  grid-template-rows: 2;
-  height: 250px;
-  width: 300px;
-}
-
-.imageFood2 img {
-  grid-template-columns: 2;
-  grid-template-rows: 3;
-  height: 250px;
-  width: 300px;
 }
 
 /*-----------------------------------------------------------------------------------------------------------*/
