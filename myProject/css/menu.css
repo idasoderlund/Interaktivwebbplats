@@ -85,6 +85,31 @@ main {
   display: block;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+th {
+  color: #818c78;
+  padding: 10px;
+  text-align: left;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+tr {
+  height: 50px;
+}
+
+tr:hover {
+  background-color: #bad8b6;
+}
+
 .category,
 .menu,
 .orderSection {
@@ -164,12 +189,12 @@ h3 {
 
 /*-----------------------------------------------------------------------------------------------------------*/
 .footerField {
-  width: 100%;
-  text-align: center;
-  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
   background-color: #cae0bc;
 }
-
 .openingHoursInfo,
 .contectInfo b {
   display: inline;

@@ -129,6 +129,40 @@ main {
   height: auto;
   display: block;
 }
+.fillin-areas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, auto);
+  gap: 20px;
+  background-color: #66785f;
+  margin-bottom: 40px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+}
+
+.fillin-areas:hover {
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  grid-template-columns: span 2;
+}
+
+.send-button {
+  grid-template-columns: span 2;
+  margin-bottom: 30px;
+}
+
 /*-----------------------------------------------------------------------------------------------------------*/
 .footerField {
   display: flex;

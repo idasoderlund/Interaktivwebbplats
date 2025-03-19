@@ -50,8 +50,8 @@
 
       <form class="booking-form">
         <div class="fillin-areas">
-          <div class="input-group">
-            <label for="name and Surname"></label>
+          <div class="input-group reachUs">
+            <label for="name"></label>
             <input
               type="text"
               id="name"
@@ -61,7 +61,7 @@
             />
           </div>
 
-          <div class="input-group">
+          <div class="input-group email">
             <label for="email"></label>
             <input
               type="email"
@@ -72,7 +72,7 @@
             />
           </div>
 
-          <div class="input-group">
+          <div class="input-group phone">
             <label for="phone"></label>
             <input
               type="tel"
@@ -83,22 +83,21 @@
             />
           </div>
 
-          <div class="input-group">
+          <div class="input-group date">
+            <label for="date"></label>
+            <input type="date" id="date" class="form-control" required />
+          </div>
+
+          <div class="input-group message">
             <label for="message"></label>
             <input
               type="textarea"
               id="message"
               rows="6"
-              cols="50"
               placeholder="Message"
               class="form-control"
               required
             />
-          </div>
-
-          <div class="input-group">
-            <label for="date"></label>
-            <input type="date" id="date" class="form-control" required />
           </div>
 
           <input type="submit" class="send-button" value="Send!" />
