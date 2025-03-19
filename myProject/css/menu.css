@@ -27,6 +27,19 @@ body {
   font-family: "Delius Swash Caps", cursive;
 }
 
+.navigationBar a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.3s, background-color 0.3s;
+}
+
+.navigationBar a:hover {
+  color: #fff;
+  background-color: #62825d;
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   .navigationBar {
     display: grid;
