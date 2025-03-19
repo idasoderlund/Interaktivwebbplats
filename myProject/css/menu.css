@@ -57,6 +57,19 @@ main {
   background-color: #d5e5d5;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
+
+.banner {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .category,
 .menu,
 .orderSection {

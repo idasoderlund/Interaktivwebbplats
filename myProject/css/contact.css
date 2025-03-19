@@ -56,6 +56,18 @@ main {
   margin-right: 20px;
 }
 
+.banner {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .bookingText {
   display: flex;
   box-sizing: border-box;

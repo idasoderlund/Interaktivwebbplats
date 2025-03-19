@@ -47,6 +47,18 @@ main {
   margin-right: 20px;
 }
 /*-----------------------------------------------------------------------------------------------------------*/
+.banner {
+  width: 100%;
+  height: 90px;
+  overflow: hidden;
+}
+
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .aboutUs {
   box-sizing: border-box;
   justify-content: center;
