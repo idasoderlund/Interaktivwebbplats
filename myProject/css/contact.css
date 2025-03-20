@@ -1,27 +1,32 @@
-.bookingText h1 {
-  font-family: "League Script", cursive;
-  font-size: 70px;
-  font-weight: 500;
+.banner,
+.banner2 {
+  width: 100%;
+  overflow: hidden;
 }
-
-html,
-body {
+.contactOpen,
+.fillin-areas {
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+}
+.fillin-areas:hover,
+.navigationBar a:hover {
+  border-radius: 5px;
+  transform: scale(1.1);
+}
+body,
+html {
   margin: 0;
   padding: 0;
 }
-
 main {
   background-color: #d5e5d5;
 }
-
 .navigationSection {
   margin: 0;
-  padding: 0;
+  padding: 20px 0;
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
-  padding-top: 20px;
-  padding-bottom: 20px;
   background-color: #cae0bc;
 }
 .navigationBar {
@@ -31,33 +36,21 @@ main {
   color: #62825d;
   font-family: "Delius Swash Caps", cursive;
 }
-
 .navigationBar a {
   text-decoration: none;
   color: #fff;
   transition: 0.3s, background-color 0.3s;
 }
-
 .navigationBar a:hover {
   color: #fff;
   background-color: #62825d;
-  border-radius: 5px;
-  transform: scale(1.1);
 }
-
 @media (max-width: 768px) {
   .navigationBar {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
-  .navigationBar {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
-
 .contactOpen {
   display: flex;
   justify-content: center;
@@ -67,32 +60,28 @@ main {
   padding: 10px;
   color: #fff;
   margin-right: 20px;
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
 }
-
+.bookingText,
+.totalContentForm {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
 .banner {
-  width: 100%;
   height: 90px;
-  overflow: hidden;
 }
-
-.banner img {
+.banner img,
+.banner2 img {
   width: 100%;
   height: auto;
   display: block;
 }
-
 .bookingText {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-left: 70px;
   margin-right: 50px;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
 .bookingText h1 {
   box-sizing: border-box;
   color: #62825d;
@@ -101,64 +90,22 @@ main {
   font-size: 50px;
   font-weight: 800;
 }
-
 .formContainer {
   display: flex;
   align-items: stretch;
 }
-
-/*.imageCelebrating {
-  flex: 1;
-  overflow: hidden;
-  margin-left: 150px;
-}
-
-.imageCelebrating img {
-  height: 180px;
-  width: auto;
-  border-radius: 20px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7), -4 0 8 rgba(0, 0, 0, 0.7),
-    4px 0 8px rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
-}
-
-.imageCelebrating img:hover {
-  transform: scale(1.2);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7), -4 0 8 rgba(0, 0, 0, 0.7),
-    4px 0 8px rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
-}*/
-
 .booking-form {
   flex: 2;
 }
-
 .bookingText p {
   margin-bottom: 30px;
 }
-
 .totalContentForm {
-  display: flex;
-  box-sizing: border-box;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.send-button {
-  margin-bottom: 30px;
-}
-
 .banner2 {
-  width: 100%;
   height: 30px;
-  overflow: hidden;
-}
-
-.banner2 img {
-  width: 100%;
-  height: auto;
-  display: block;
 }
 .fillin-areas {
   display: grid;
@@ -171,30 +118,18 @@ main {
   padding-left: 40px;
   padding-right: 40px;
   border-radius: 30px;
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
-  transition: 0.2s;
 }
-
-.fillin-areas:hover {
-  border-radius: 5px;
-  transform: scale(1.1);
+.message,
+.send-button {
+  grid-template-columns: span 2;
 }
-
 .input-group {
   display: flex;
   flex-direction: column;
 }
-
-.message {
-  grid-template-columns: span 2;
-}
-
 .send-button {
-  grid-template-columns: span 2;
   margin-bottom: 30px;
 }
-
-/*-----------------------------------------------------------------------------------------------------------*/
 .footerField {
   display: flex;
   flex-direction: row;
@@ -202,13 +137,12 @@ main {
   justify-content: space-around;
   background-color: #cae0bc;
 }
-.openingHoursInfo,
-.contectInfo b {
+.contectInfo b,
+.openingHoursInfo {
   display: inline;
 }
-
-.openingHoursInfo,
-.contectInfo p {
+.contectInfo p,
+.openingHoursInfo {
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
@@ -217,16 +151,18 @@ main {
   padding-bottom: 1em;
 }
 .openingHoursInfo {
-  grid-template-columns: 1 / 2;
+  grid-template-columns: 1/2;
   grid-template-rows: 1;
 }
-
 .contectInfo {
-  grid-template-columns: 2 / 3;
+  grid-template-columns: 2/3;
   grid-template-rows: 1;
 }
-
 @media (max-width: 480px) {
+  .navigationBar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .footerField {
     grid-template-columns: 1fr;
   }

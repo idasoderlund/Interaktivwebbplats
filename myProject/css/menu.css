@@ -1,13 +1,29 @@
+.navigationSection,
+body {
+  display: flex;
+  box-sizing: border-box;
+}
+
+.banner,
+.banner2 {
+  width: 100%;
+  overflow: hidden;
+}
+
+.category h1,
+.menu h1,
+.navigationBar,
+.navigationSection,
 body {
   box-sizing: border-box;
-  display: flex;
+}
+
+body {
   flex-direction: column;
   min-height: 100vh;
 }
 
 .navigationSection {
-  box-sizing: border-box;
-  display: flex;
   justify-content: space-around;
   align-items: center;
   padding-top: 20px;
@@ -19,8 +35,13 @@ body {
   z-index: 1000;
 }
 
+.menuOpen,
+td,
+th {
+  padding: 10px;
+}
+
 .navigationBar {
-  box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   color: #62825d;
@@ -46,12 +67,6 @@ body {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (max-width: 480px) {
-  .navigationBar {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-}
 
 .menuOpen {
   display: flex;
@@ -59,27 +74,23 @@ body {
   align-items: center;
   background: #62825d;
   border-radius: 20px;
-  padding: 10px;
   color: #fff;
   margin-right: 20px;
-  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7);
   transition: 0.2s;
 }
-
 main {
   flex: 1;
   margin-top: 80px;
   background-color: #d5e5d5;
 }
-/*-----------------------------------------------------------------------------------------------------------*/
 
 .banner {
-  width: 100%;
   height: 90px;
-  overflow: hidden;
 }
 
-.banner img {
+.banner img,
+.banner2 img {
   width: 100%;
   height: auto;
   display: block;
@@ -93,19 +104,14 @@ table {
 
 th {
   color: #818c78;
-  padding: 10px;
   text-align: left;
 }
-
 td {
-  padding: 10px;
   border-bottom: 1px solid #ddd;
 }
-
 tr {
   height: 50px;
 }
-
 tr:hover {
   background-color: #bad8b6;
 }
@@ -121,7 +127,6 @@ tr:hover {
 
 .category h1,
 .menu h1 {
-  box-sizing: border-box;
   color: #62825d;
   align-items: center;
   text-align: center;
@@ -131,32 +136,35 @@ tr:hover {
   font-weight: 800;
 }
 
-.category h2 {
-  color: #62825d;
-  padding: 10px;
-  font-family: "League Script", cursive;
-  font-size: 45px;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
+.category h2,
 .orderSection h2,
 h3 {
   color: #62825d;
   padding: 10px;
-  font-family: "League Script", cursive;
   font-size: 45px;
   justify-content: center;
-  align-items: center;
   text-align: center;
+  font-family: "League Script", cursive;
+}
+
+.category h2 {
+  align-items: center;
+}
+
+.orderSection h2,
+h3 {
+  align-items: center;
   text-decoration: underline;
 }
 
-.category p {
+.category p,
+.listedOptions {
   padding-right: 60px;
   padding-left: 60;
   justify-content: center;
+}
+
+.category p {
   align-items: center;
   text-align: center;
   margin-bottom: 10px;
@@ -172,7 +180,7 @@ h3 {
 }
 
 .category ul li {
-  padding: 5px 0px;
+  padding: 5px 0;
 }
 
 .checkBoxContainer {
@@ -190,9 +198,6 @@ h3 {
 }
 
 .listedOptions {
-  padding-right: 60px;
-  padding-left: 60;
-  justify-content: center;
   align-items: center;
   text-align: center;
 }
@@ -204,18 +209,9 @@ h3 {
 }
 
 .banner2 {
-  width: 100%;
   height: 30px;
-  overflow: hidden;
 }
 
-.banner2 img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/*-----------------------------------------------------------------------------------------------------------*/
 .footerField {
   display: flex;
   flex-direction: row;
@@ -223,13 +219,14 @@ h3 {
   justify-content: space-around;
   background-color: #cae0bc;
 }
-.openingHoursInfo,
-.contectInfo b {
+
+.contectInfo b,
+.openingHoursInfo {
   display: inline;
 }
 
-.openingHoursInfo,
-.contectInfo p {
+.contectInfo p,
+.openingHoursInfo {
   box-sizing: border-box;
   display: flex;
   justify-content: space-around;
@@ -237,26 +234,31 @@ h3 {
   padding-top: 1em;
   padding-bottom: 1em;
 }
+
 .openingHoursInfo {
-  grid-template-columns: 1 / 2;
+  grid-template-columns: 1/2;
   grid-template-rows: 1;
 }
 
 .contectInfo {
-  grid-template-columns: 2 / 3;
+  grid-template-columns: 2/3;
   grid-template-rows: 1;
 }
 
 @media (max-width: 480px) {
+  .navigationBar {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .footerField {
     grid-template-columns: 1fr;
   }
 }
 
+#calculateTotal,
 #chooseCategory,
 #togglePriceAndAllergies,
-#togglelunchBuffet,
-#calculateTotal {
+#togglelunchBuffet {
   background-color: #889e73;
   color: #fff;
   padding: 5px 30px;

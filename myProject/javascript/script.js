@@ -1,86 +1,68 @@
-// här är interaktiva  knappen för att kategorisera menyn
-document.addEventListener("DOMContentLoaded", function () {
-  const chooseCategory = document.getElementById("chooseCategory");
-  const categories = document.querySelectorAll(".category");
-
-  chooseCategory.addEventListener("change", function () {
-    const selectedCategory = chooseCategory.value;
-
-    categories.forEach((category) => {
-      if (selectedCategory === "all") {
-        category.style.display = "block";
-      } else if (category.classList.contains(selectedCategory)) {
-        category.style.display = "block";
-      } else {
-        category.style.display = "none";
-      }
-    });
-  });
-});
-//--------------------------------------------------------------------
-//Här är knapp för att dölja/visa specialk & allergier
 function inittogglePriceAndAllergies() {
-  const toggleButton1 = document.getElementById("togglePriceAndAllergies");
-  const pricesAndAllergiesInfo = document.getElementById(
-    "pricesAndAllergiesInfo"
-  );
-  if (toggleButton1 && pricesAndAllergiesInfo) {
-    console.log(
-      "Toggle button for prices and allergies not found, initializing."
-    );
-
-    toggleButton1.addEventListener("click", function () {
-      pricesAndAllergiesInfo.style.display =
-        pricesAndAllergiesInfo.style.display === "none" ||
-        pricesAndAllergiesInfo.style.display === ""
-          ? "block"
-          : "none";
-    });
-  } else {
-    console.warn("Toggle button is not found, skipping toggle initialization.");
-  }
-}
-document.addEventListener("DOMContentLoaded", function () {
-  inittogglePriceAndAllergies();
-});
-//--------------------------------------------------------------------
-// Här är interaktiva knappen för att visa/dölja lunchbuffé-info
-function initTogglelunchBuffet() {
-  const toggleButton = document.getElementById("togglelunchBuffet");
-  if (toggleButton) {
-    console.log("Toggle button found, initializing toggle for lunch buffet.");
-
-    toggleButton.addEventListener("click", function () {
-      let lunchBuffetInformation = document.getElementById("lunchBuffetInfo");
-      if (lunchBuffetInformation) {
-        lunchBuffetInformation.style.display =
-          lunchBuffetInformation.style.display === "none" ||
-          lunchBuffetInformation.style.display === ""
+  let e = document.getElementById("togglePriceAndAllergies"),
+    t = document.getElementById("pricesAndAllergiesInfo");
+  e && t
+    ? (console.log(
+        "Toggle button for prices and allergies not found, initializing."
+      ),
+      e.addEventListener("click", function () {
+        t.style.display =
+          "none" === t.style.display || "" === t.style.display
             ? "block"
             : "none";
-      } else {
-        console.warn("Lunch Buffet information not found");
-      }
-    });
-  } else {
-    console.warn("Toggle button is not found, skipping toggle initialization.");
-  }
+      }))
+    : console.warn(
+        "Toggle button is not found, skipping toggle initialization."
+      );
+}
+function initTogglelunchBuffet() {
+  let e = document.getElementById("togglelunchBuffet");
+  e
+    ? (console.log(
+        "Toggle button found, initializing toggle for lunch buffet."
+      ),
+      e.addEventListener("click", function () {
+        let e = document.getElementById("lunchBuffetInfo");
+        e
+          ? (e.style.display =
+              "none" === e.style.display || "" === e.style.display
+                ? "block"
+                : "none")
+          : console.warn("Lunch Buffet information not found");
+      }))
+    : console.warn(
+        "Toggle button is not found, skipping toggle initialization."
+      );
 }
 document.addEventListener("DOMContentLoaded", function () {
-  initTogglelunchBuffet();
-});
-//--------------------------------------------------------------------------------
-// här är en simpel beräkning för totalkostnad av valda rätter.
-document
-  .getElementById("calculateTotal")
-  .addEventListener("click", function () {
-    const dishes = document.querySelectorAll('input[name="dish"]:checked');
-    let totalCost = 0;
-
-    dishes.forEach((dish) => {
-      totalCost += parseFloat(dish.value);
+  let e = document.getElementById("chooseCategory"),
+    t = document.querySelectorAll(".category");
+  e.addEventListener("change", function () {
+    let n = e.value;
+    t.forEach((e) => {
+      "all" === n
+        ? (e.style.display = "block")
+        : e.classList.contains(n)
+        ? (e.style.display = "block")
+        : (e.style.display = "none");
     });
-    document.getElementById(
-      "totalCostLabel"
-    ).innerText = `Total Cost: $${totalCost.toFixed(2)}`;
   });
+}),
+  document.addEventListener("DOMContentLoaded", function () {
+    inittogglePriceAndAllergies();
+  }),
+  document.addEventListener("DOMContentLoaded", function () {
+    initTogglelunchBuffet();
+  }),
+  document
+    .getElementById("calculateTotal")
+    .addEventListener("click", function () {
+      let e = document.querySelectorAll('input[name="dish"]:checked'),
+        t = 0;
+      e.forEach((e) => {
+        t += parseFloat(e.value);
+      }),
+        (document.getElementById(
+          "totalCostLabel"
+        ).innerText = `Total Cost: $${t.toFixed(2)}`);
+    });
