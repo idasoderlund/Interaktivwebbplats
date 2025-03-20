@@ -44,7 +44,18 @@ main {
 .navigationBar a {
   text-decoration: none;
   color: #fff;
+  background-color: #62825d;
+  border-radius: 20px;
+  padding: 10px;
   transition: 0.3s, background-color 0.3s;
+  margin: 0 25px;
+  text-align: center;
+}
+
+.navigationBar a:hover {
+  color: #62825d;
+  background-color: #fff;
+  transform: scale(1.1);
 }
 .aboutUs h1,
 .informationTexts h2 {
@@ -52,12 +63,7 @@ main {
   font-family: "League Script", cursive;
   text-align: center;
 }
-.navigationBar a:hover {
-  color: #fff;
-  background-color: #62825d;
-  border-radius: 5px;
-  transform: scale(1.1);
-}
+
 .homeOpen {
   display: flex;
   align-items: center;
