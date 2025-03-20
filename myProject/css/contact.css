@@ -102,6 +102,37 @@ main {
   font-weight: 800;
 }
 
+.formContainer {
+  display: flex;
+  align-items: stretch;
+}
+
+/*.imageCelebrating {
+  flex: 1;
+  overflow: hidden;
+  margin-left: 150px;
+}
+
+.imageCelebrating img {
+  height: 180px;
+  width: auto;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7), -4 0 8 rgba(0, 0, 0, 0.7),
+    4px 0 8px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+}
+
+.imageCelebrating img:hover {
+  transform: scale(1.2);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.7), -4 0 8 rgba(0, 0, 0, 0.7),
+    4px 0 8px rgba(0, 0, 0, 0.7);
+  transition: 0.2s;
+}*/
+
+.booking-form {
+  flex: 2;
+}
+
 .bookingText p {
   margin-bottom: 30px;
 }
