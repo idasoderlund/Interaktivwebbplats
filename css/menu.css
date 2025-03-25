@@ -120,6 +120,22 @@ tr:hover {
   background-color: #bad8b6;
 }
 
+@media (max-width: 768px) {
+  .category {
+    display: none;
+  }
+
+  .category.active {
+    display: block;
+  }
+
+  #togglePriceAndAllergies,
+  #togglelunchBuffet {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
 .category,
 .menu,
 .orderSection {

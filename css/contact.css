@@ -111,6 +111,12 @@ main {
   justify-content: center;
   align-items: center;
 }
+
+@media (max-width: 768px) {
+  .formContainer {
+    flex-direction: column;
+  }
+}
 .banner2 {
   height: 30px;
 }

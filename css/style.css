@@ -9,6 +9,26 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .textContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .textContainer > div {
+    margin-bottom: 20px;
+  }
+
+  .informationTexts {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .banner,
+  .banner2 {
+    height: auto;
+  }
+}
+
 *,
 .aboutUs,
 .aboutUs h1,
